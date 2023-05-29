@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    height: 3000px;
+}
+:root {
+    --primary-color: #171100;
+}
+/* Common dung` chung */
+a {
+    text-decoration: none;
+}
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    /* độ rộng trình duyệt nhỏ hơn thì nó ăn độ rông tối đa.Thông thường để cách 24px */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 144px;
+    /* min-width chữ dài hơn có thể kéo ra được */
+    padding: 11px 41px;
+    /* tăng kích thước nút. inspect xem và tăng */
+    background: var(--primary-color);
+    border-radius: 24.5px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ffffff;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* Header */
+.header {
+    background: #fffcf4;
+    height: 100vh;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
