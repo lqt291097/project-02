@@ -1,0 +1,16 @@
+.dots {
+    display: flex;
+    gap: 6px;
+}
+.dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+.dot.active {
+    background: #ffb900;
+    cursor: default;
+}
